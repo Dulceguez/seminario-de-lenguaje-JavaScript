@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Cambio de fondo al recargar</title>
+    <style>
+       body{
+        height: 100vh; 
+       }
+    </style>   
+</head>
+<body>
+    <h1>Adicional 1 - Practica 01</h1>
+    <script>
+        const colores = ['#FFADAD','#FFD6A5','FDFFB6','#794fb8','#e85858'];
+        
+        // busco en localStorage si hay algo guardado en la variable 'ultimoColor', devuelve el ultimo color
+        const ultimoColor = localStorage.getItem('ultimoColor');
+        let nuevoColor;
+        do{ // para que no se repita el color
+            nuevoColor = colores[Math.floor(Math.random() * colores.length)];
+        } while(nuevoColor === ultimoColor);
+
+        // aplico nuevo color al fondo
+        document.body.style.backgroundColor = nuevoColor;
+
+        // guardo el nuevo color para la proxima recarga
+        localStorage.setItem('ultimoColor', nuevoColor);
+    </script>
+</body>
+
+</html>    

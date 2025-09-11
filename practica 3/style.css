@@ -1,0 +1,72 @@
+body {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #000;
+  margin: 0;
+  padding: 20px;
+  color:rgb(255, 255, 255);
+  display : flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items : center;
+}
+
+h1 {
+font-weight: bold;
+  font-size: 3rem;
+  text-align: center;
+  text-shadow:
+    0 0 5px #e9d41c,
+    0 0 10px #ffe81f,
+    0 0 20px #ffcc00;
+}
+
+button {
+  background-color: #ffe81f;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.contenedorPersonajes {
+  display : flex;
+  flex-direction : row;
+  gap : 100px;
+}
+
+
+.paginas {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+/*Estilos de los personajes*/
+
+#lista-personajes {
+  cursor : pointer; 
+  max-width: 100px;
+  border: 1px solid #ffe81f;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+
+#detalles-personaje {
+  display : none; /* No se muestra hasta que se llama a la funcion*/ 
+  cursor : pointer; 
+  width: 150px;
+  height: 200px;
+  border: 1px solid #ffe81f;
+  padding: 10px;
+}
+
+button:hover {
+  background-color: #ffcc00;
+}

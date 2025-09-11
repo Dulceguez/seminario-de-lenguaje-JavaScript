@@ -1,0 +1,19 @@
+[
+ {
+ "id": 1,
+ "type": "automóvil",
+ "distance": 15000,
+ "fuelConsumption": 10
+ },
+ {
+ "id": 2,
+ "type": "bicicleta",
+ "distance": 300
+ },
+ {
+ "id": 3,
+ "type": "motocicleta",
+ "distance": 5000,
+ "fuelConsumption": 3
+ }
+]

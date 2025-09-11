@@ -1,0 +1,43 @@
+body {
+    background-color: beige;
+    display: flex;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center;     /* Centra los elementos verticalmente */
+    height: 60vh;
+    margin: 10px;               /* Elimina márgenes predeterminados */
+    flex-direction: column;
+}
+
+#imagen-1, #imagen-2, #imagen-3 {
+    display: none;
+    justify-content: center;
+    border: 2px solid black;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#imagen-1, #imagen-2 {
+    width: 300px;
+    height: 200px; /*Esto es para ajustar un poco esas 2 imagenes*/
+}
+
+.SeleccionDeImagenes {
+    display: block;
+    text-align: center;  /* Alinea el texto de la clase al centro */
+}
+#TextoSeleccion{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+
+#inputImagen {
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5%;
+    color: aliceblue;
+    background-color: black;
+}
+
+.seleccionDeFondo{
+    display: block;
+    text-align: center;  /* Alinea el texto de la clase al centro */
+}
